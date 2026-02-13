@@ -13,16 +13,17 @@ Theme Usage
 -----------
 
 Install with `pip install sphinx-rtd-light-dark`. Then in your `conf.py` file,
-add the entry ``'sphinx_rtd_light_dark'`` to the `extensions` list,
-and set `html_theme` to ``'sphinx_rtd_light_dark'``.
+add the entry ``'ultraplot_theme'`` to the `extensions` list,
+and set `html_theme` to ``'ultraplot_theme'``.
+The legacy extension/theme name ``'sphinx_rtd_light_dark'`` remains supported.
 
 Example `conf.py`:
 
 ```python
 extensions = [
   ...
-  'sphinx_rtd_light_dark',
+  'ultraplot_theme',
   ...
 ]
-html_theme = 'sphinx_rtd_light_dark'
+html_theme = 'ultraplot_theme'
 ```

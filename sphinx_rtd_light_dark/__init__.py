@@ -2,6 +2,7 @@
 A clean variant on the read the docs theme with light mode dark mode toggling.
 """
 import os
+
 from pygments.formatters import HtmlFormatter
 
 # Declare themes. These should be kept updated with custom.js
@@ -26,4 +27,6 @@ for style in (init_theme, light_theme, dark_theme):  # or get_all_styles()
 # Add entrypoint for theme
 # See: https://www.sphinx-doc.org/en/master/development/theming.html
 def setup(app):  # noqa: E302
+    # Keep legacy name for compatibility and add canonical UltraPlot name.
     app.add_html_theme('sphinx_rtd_light_dark', base)
+    app.add_html_theme('ultraplot_theme', base)
